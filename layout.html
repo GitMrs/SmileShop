@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+    }
+
+    .wrap {
+        height: 100%;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    header {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+        background: darkturquoise;
+    }
+
+    aside {
+        position: fixed;
+        width: 240px;
+
+        left: 0;
+        top: 50px;
+        bottom: 0px;
+        background: darkviolet;
+    }
+
+    main {
+        height: 100%;
+        position: relative;
+        padding: 20px 20px 84px;
+        background: darkkhaki;
+        min-height: 9000px;
+        margin-left: 240px;
+    }
+
+    .main-wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner {
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <header></header>
+        <aside></aside>
+        <main class="body">
+            <div class="main-wrap">
+                <div class="banner">
+                    <img src="http://7xjyw1.com1.z0.glb.clouddn.com/simleVueDemoPic001.jpg" alt="">
+                </div>
+                <div class="main-body"></div>
+            </div>
+        </main>
+    </div>
+    <script>
+        //  var scroll = document.scrollTop();
+        var main = document.getElementsByClassName("body")[0]
+        console.log(document)
+        document.onscroll = function (e) {
+
+            console.log(window.scrollY)
+        }
+
+        var a = 1;
+        var b = function a(x) {
+            x && a(--x);
+        };
+        alert(a);
+
+    </script>
+</body>
+
+</html>
