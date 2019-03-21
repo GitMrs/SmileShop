@@ -1,0 +1,1 @@
+import contence from './instance';
